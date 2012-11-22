@@ -1,0 +1,12 @@
+Esse pacote abrigará as classes responsáveis pela implementação das funções principais, tornando-
+se assim o cérebro e núcleo do programa. Toda a lógica das funcionalidades e uso dos recursos
+deverá ser implementado aqui.
+
+Alterações na lógica do projeto, detalhes adicionais, resumos das classes e comunicação sobre
+esse pacote devem ser feitos através desse documento.
+
+***** FUNCIONALIDADES SUGERIDAS *****
+
+
+
+***** RESUMO DAS CLASSES *****
