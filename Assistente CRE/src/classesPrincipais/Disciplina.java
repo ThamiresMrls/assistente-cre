@@ -2,15 +2,25 @@ package classesPrincipais;
 
 public class Disciplina {
     
+    /* Constantes */
+    private int qtdeNotas = 0;
+    
     /* Atributos principais */
     private String nome;
     private int cred;
     private int media;
+    private int[] notas;
     
     /* Construtor */
-    public Disciplina (String meuNome, int meuCred) {
+    public Disciplina (String meuNome, int meuCred, int minhasNotas) {
         nome = meuNome;
         cred = meuCred;
+        qtdeNotas = minhasNotas;
+        notas = new int[qtdeNotas];
+    }
+    
+    public int cadastraNota (int nota, int peso) {
+        return (nota*peso)/qtdeNotas;
     }
     
     
