@@ -40,6 +40,8 @@ public class Periodo {
         for (int i = 0; i < listaDisciplinas.size(); i++) cre += (listaDisciplinas.get(i).getMedia() * listaDisciplinas.get(i).getCred());
         cre = (cre/numCreditos);
     }
+    
+    /* Métodos de acesso */
     public float getCRE () {
         return cre;
     }
