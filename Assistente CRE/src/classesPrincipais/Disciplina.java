@@ -15,10 +15,10 @@ public class Disciplina {
     private int contador = 0;
     
     /* Construtor */
-    public Disciplina (String meuNome, int meuCred, int minhasNotas) {
+    public Disciplina (String meuNome, int meuCred, int qNotas) {
         nome = meuNome;
         cred = meuCred;
-        qtdeNotas = minhasNotas;
+        qtdeNotas = qNotas;
         notas = new float[qtdeNotas];
     }
     
@@ -38,22 +38,22 @@ public class Disciplina {
     
     
     /* Métodos de acesso */
-    private String getNome() {
+    public String getNome() {
         return nome;
     }
-    private void getNome(String a) {
+    public void getNome(String a) {
         nome = a;
     }
-    private int getCred() {
+    public int getCred() {
         return cred;
     }
-    private void setCred(int a) {
+    public void setCred(int a) {
         cred = a;
     }
-    private float getMedia() {
+    public float getMedia() {
         return media;
     }
-    private void setMedia(int a) {
+    public void setMedia(int a) {
         media = a;
     }
 }
