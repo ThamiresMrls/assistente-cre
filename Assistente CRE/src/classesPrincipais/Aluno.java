@@ -1,15 +1,33 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package classesPrincipais;
 
-/**
- *
- * @author Leonardui
- */
 public class Aluno {
+    
+    /* Atributos principais */
     private String nome;
     private String curso;
     private int cre;
+    
+    
+    
+    
+    /* Métodos de acesso */
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String a) {
+        nome = a;
+    }
+    public String getCurso() {
+        return curso;
+    }
+    public void setCurso(String a) {
+        curso = a;
+    }
+    public int getCre() {
+        return cre;
+    }
+    public void setCre(int a) {
+        cre = a;
+    }
+    
 }

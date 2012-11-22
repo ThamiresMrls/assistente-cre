@@ -1,15 +1,33 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package classesPrincipais;
 
-/**
- *
- * @author Leonardui
- */
 public class Disciplina {
+    
+    /* Atributos principais */
     private String nome;
     private int cred;
     private int media;
+    
+    
+    
+    
+    
+    /* Métodos de acesso */
+    private String getNome() {
+        return nome;
+    }
+    private void getNome(String a) {
+        nome = a;
+    }
+    private int getCred() {
+        return cred;
+    }
+    private void setCred(int a) {
+        cred = a;
+    }
+    private int getMedia() {
+        return media;
+    }
+    private void setMedia(int a) {
+        media = a;
+    }
 }
