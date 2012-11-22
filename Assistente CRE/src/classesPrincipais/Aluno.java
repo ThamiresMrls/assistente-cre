@@ -7,6 +7,12 @@ public class Aluno {
     private String curso;
     private int cre;
     
+    /* Construtor */
+    public Aluno (String meuNome, String meuCurso) {
+        nome = meuNome;
+        curso = meuCurso;
+    }
+    
     
     
     

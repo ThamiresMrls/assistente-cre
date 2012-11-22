@@ -7,6 +7,11 @@ public class Disciplina {
     private int cred;
     private int media;
     
+    /* Construtor */
+    public Disciplina (String meuNome, int meuCred) {
+        nome = meuNome;
+        cred = meuCred;
+    }
     
     
     
