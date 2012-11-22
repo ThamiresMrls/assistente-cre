@@ -10,15 +10,17 @@ public class Disciplina {
     private int cred;
     private float media;
     private float[] notas;
+    private boolean status;
     
     /* Outros */
     private int contador = 0;
     
     /* Construtor */
-    public Disciplina (String meuNome, int meuCred, int qNotas) {
+    public Disciplina (String meuNome, int meuCred, int qNotas, boolean dStatus) {
         nome = meuNome;
         cred = meuCred;
         qtdeNotas = qNotas;
+        status = dStatus;
         notas = new float[qtdeNotas];
     }
     
@@ -31,8 +33,9 @@ public class Disciplina {
     
     public void calculaMedia() {
         for (int i = 0; i < qtdeNotas; i++) {
-            media = media + notas[i];
+            media += notas[i];
         }
+        media = (media/qtdeNotas);
     }
     
     
@@ -55,5 +58,11 @@ public class Disciplina {
     }
     public void setMedia(int a) {
         media = a;
+    }
+    public boolean getStatus () {
+        return status;
+    }
+    public void setStatus (boolean a) {
+        status = a;
     }
 }
