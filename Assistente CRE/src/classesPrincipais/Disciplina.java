@@ -11,6 +11,9 @@ public class Disciplina {
     private int media;
     private int[] notas;
     
+    /* Outros */
+    private int contador = 0;
+    
     /* Construtor */
     public Disciplina (String meuNome, int meuCred, int minhasNotas) {
         nome = meuNome;
@@ -19,10 +22,18 @@ public class Disciplina {
         notas = new int[qtdeNotas];
     }
     
-    public int cadastraNota (int nota, int peso) {
-        return (nota*peso)/qtdeNotas;
+    public void cadastraNota (int nota, int peso) {
+        if (contador != qtdeNotas) {
+            notas[contador] = (nota*peso)/qtdeNotas;
+            contador++;
+        }
     }
     
+    public void calculaMedia() {
+        for (int i = 0; i < qtdeNotas; i++) {
+            media = media + notas[i];
+        }
+    }
     
     
     
