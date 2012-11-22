@@ -37,7 +37,7 @@ public class Aluno {
         for (int i = 0; i < listaPeriodos.size(); i++) {
             for (int j = 0; j < listaPeriodos.get(i).listaDisciplinas.size(); j++) {
                 creTotal += (listaPeriodos.get(i).listaDisciplinas.get(j).getMedia() * listaPeriodos.get(i).listaDisciplinas.get(j).getCred());
-                numCreditosTotal++;
+                numCreditosTotal += listaPeriodos.get(i).listaDisciplinas.get(j).getCred();
             }
         }
         creTotal = (creTotal/numCreditosTotal);
