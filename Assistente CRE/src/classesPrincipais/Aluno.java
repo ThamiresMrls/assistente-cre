@@ -1,18 +1,19 @@
 package classesPrincipais;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Aluno {
     
     /* Atributos principais */
     private String nome = "";
     private String curso = "";
-    private int cre = 0; 
-    ArrayList<Disciplina> listaDisciplinas = new ArrayList<Disciplina>();
+    private int creTotal = 0; 
+    ArrayList <Periodo> listaPeriodos = new ArrayList<>();
     
     /* Outros */
-    private int numDisciplinas = 0;
-    private int numCreditos = 0;
+    private int numPeriodos = 0;
+    private int numCreditosTotal = 0;
     
     
     
@@ -20,20 +21,26 @@ public class Aluno {
     public Aluno (String meuNome, String meuCurso) {
         nome = meuNome;
         curso = meuCurso;
+        List <Periodo> listaPeriodos;
+        listaPeriodos = new ArrayList ();
     }
    
     /* Método para adicionar mais uma disciplina */
-    public void addDisciplina(String nome, int cred, int qNotas) {
-        Disciplina e = new Disciplina (nome, cred, qNotas);
-        listaDisciplinas.add(e);
-        numDisciplinas++;
-        numCreditos = numCreditos + cred;
+    public void addPeriodo() {
+        Periodo p = new Periodo ();
+        listaPeriodos.add(p);
+        numPeriodos++;
     }
     
-    /* Método para calcular o CRE */  
-    public void calculaCRE() {
-        for (int i = 0; i < listaDisciplinas.size(); i++) cre += (listaDisciplinas.get(i).getMedia() * listaDisciplinas.get(i).getCred());
-        cre = (cre/numCreditos);
+    /* Método para calcular o CRE Total*/  
+    public void calculaCRE () {
+        for (int i = 0; i < listaPeriodos.size(); i++) {
+            for (int j = 0; j < listaPeriodos.get(i).listaDisciplinas.size(); j++) {
+                creTotal += (listaPeriodos.get(i).listaDisciplinas.get(j).getMedia() * listaPeriodos.get(i).listaDisciplinas.get(j).getCred());
+                numCreditosTotal++;
+            }
+        }
+        creTotal = (creTotal/numCreditosTotal);
     }
     
     /* Métodos de acesso */
@@ -49,11 +56,11 @@ public class Aluno {
     public void setCurso(String a) {
         curso = a;
     }
-    public int getCre() {
-        return cre;
+    public int getCreTotal() {
+        return creTotal;
     }
-    public void setCre(int a) {
-        cre = a;
+    public void setCreTotal (int a) {
+        creTotal = a;
     }
     
 }
