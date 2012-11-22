@@ -25,7 +25,7 @@ public class Aluno {
         listaPeriodos = new ArrayList ();
     }
    
-    /* Método para adicionar mais uma disciplina */
+    /* Método para adicionar mais um Período */
     public void addPeriodo() {
         Periodo p = new Periodo ();
         listaPeriodos.add(p);
