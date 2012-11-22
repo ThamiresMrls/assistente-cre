@@ -8,8 +8,8 @@ public class Disciplina {
     /* Atributos principais */
     private String nome;
     private int cred;
-    private int media;
-    private int[] notas;
+    private float media;
+    private float[] notas;
     
     /* Outros */
     private int contador = 0;
@@ -19,10 +19,10 @@ public class Disciplina {
         nome = meuNome;
         cred = meuCred;
         qtdeNotas = minhasNotas;
-        notas = new int[qtdeNotas];
+        notas = new float[qtdeNotas];
     }
     
-    public void cadastraNota (int nota, int peso) {
+    public void cadastraNota (float nota, int peso) {
         if (contador != qtdeNotas) {
             notas[contador] = (nota*peso)/qtdeNotas;
             contador++;
@@ -50,7 +50,7 @@ public class Disciplina {
     private void setCred(int a) {
         cred = a;
     }
-    private int getMedia() {
+    private float getMedia() {
         return media;
     }
     private void setMedia(int a) {
