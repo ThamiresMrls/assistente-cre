@@ -1,5 +1,15 @@
 package classesInterface;
 
+import classesPrincipais.Aluno;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+
 public class BoasVindas extends javax.swing.JFrame {
 
     public BoasVindas() {
@@ -180,11 +190,30 @@ public class BoasVindas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void consButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_consButtonActionPerformed
+        String nome = campoNome.getText();
+        int mat = Integer.parseInt(campoMat.getText());
+        String curso = campoCurso.getText();
         
+        if (consultaObj(mat) == null) {
+            JOptionPane.showMessageDialog(null, "Nenhum cadastro foi encontrado com essas informações!\nTente novamente.", "Cadastro não encontrado", JOptionPane.ERROR_MESSAGE);
+            campoNome.setText("");
+            campoMat.setText("");
+            campoCurso.setText("");
+        }
     }//GEN-LAST:event_consButtonActionPerformed
 
     private void cadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadButtonActionPerformed
+        String nome = campoNome.getText();
+        int mat = Integer.parseInt(campoMat.getText());
+        String curso = campoCurso.getText();
         
+        if (consultaObj(mat) == null) {
+            Aluno a = new Aluno (nome, curso, mat);
+            cadastraAluno(a);
+        } else JOptionPane.showMessageDialog(null, "Parece que já temos alguém cadastrado com essa matrícula!\nSe desejar consultar esse cadastro, aperte o botão 'Cadastrar!' na tela de boas vindas.", "Ops, cadastro já encontrado!", JOptionPane.ERROR_MESSAGE);
+
+        /* Abre nova janela e inicia novas operações */
+        /* Bloco de comandos a ser implementado ainda */
     }//GEN-LAST:event_cadButtonActionPerformed
 
     public static void main(String args[]) {
@@ -217,6 +246,41 @@ public class BoasVindas extends javax.swing.JFrame {
                 new BoasVindas().setVisible(true);
             }
         });
+    }
+    
+    /* Método para ler um objeto qualquer no arquivo */
+    public Object consultaObj(int mat) {
+        Object obj = null;
+        FileInputStream file;
+        ObjectInputStream objectStream;
+        
+        try {
+            file = new FileInputStream("Data - " + mat + ".txt");
+            objectStream = new ObjectInputStream(file);
+            
+            obj = objectStream.readObject();
+        } catch( IOException | ClassNotFoundException ex) {
+            Logger.getLogger(Aluno.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return obj;
+    }   
+    
+    /* Método para cadastrar um objeto qualquer no arquivo */
+    public void cadastraAluno(Aluno a) {
+        ObjectOutputStream objectStream;
+        FileOutputStream file;
+        
+        try {
+            file = new FileOutputStream("Data - " + a.getMatricula() + ".txt"); // Criação de um arquivo para receber o fluxo de dados
+            objectStream = new ObjectOutputStream(file);                        // Criação do "assistente" para direcionar esse fluxo
+            
+            objectStream.writeObject(a);                                        // O assistente escreve o fluxo no arquivo
+            
+            objectStream.close();                                               // O assistente fecha todos os seus fluxos
+        } catch (IOException ex) {
+            Logger.getLogger(Aluno.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
