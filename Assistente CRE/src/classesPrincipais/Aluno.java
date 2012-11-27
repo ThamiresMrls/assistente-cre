@@ -14,7 +14,8 @@ public class Aluno {
     /* Atributos principais */
     private String nome = "";
     private String curso = "";
-    private int creTotal = 0; 
+    private int creTotal = 0;
+    private int matricula = 0;
     ArrayList <Periodo> listaPeriodos = new ArrayList<>();
     
     /* Outros */
@@ -23,9 +24,10 @@ public class Aluno {
     
     
     /* Construtor */
-    public Aluno (String meuNome, String meuCurso) {
+    public Aluno (String meuNome, String meuCurso, int minhaMatricula) {
         nome = meuNome;
         curso = meuCurso;
+        matricula = minhaMatricula;
     }
    
     /* Método para adicionar mais um Período */
@@ -93,6 +95,12 @@ public class Aluno {
     }
     public void setCurso(String a) {
         curso = a;
+    }
+    public int getMatricula() {
+        return matricula;
+    }
+    public void setMatricula(int a) {
+        matricula = a;
     }
     public int getCreTotal() {
         return creTotal;
