@@ -1,7 +1,12 @@
 package classesPrincipais;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Aluno {
     
@@ -41,6 +46,23 @@ public class Aluno {
             }
         }
         creTotal = (creTotal/numCreditosTotal);
+    }
+    
+    /* Método para cadastrar um objeto qualquer no arquivo */
+    public void cadastraObj(Object objeto) {
+        ObjectOutputStream objectStream;
+        FileOutputStream file;
+        
+        try {
+            file = new FileOutputStream("Data.txt");        // Criação de um arquivo para receber o fluxo de dados
+            objectStream = new ObjectOutputStream(file);    // Criação do "assistente" para direcionar esse fluxo
+            
+            objectStream.writeObject(objeto);               // O assistente escreve o fluxo no arquivo
+            
+            objectStream.close();                           // O assistente fecha todos os seus fluxos
+        } catch (IOException ex) {
+            Logger.getLogger(Aluno.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
     /* Métodos de acesso */
