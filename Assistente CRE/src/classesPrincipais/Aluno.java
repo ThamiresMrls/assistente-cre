@@ -1,13 +1,6 @@
 package classesPrincipais;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Aluno {
     
@@ -46,41 +39,6 @@ public class Aluno {
             }
         }
         creTotal = (creTotal/numCreditosTotal);
-    }
-    
-    /* Método para ler um objeto qualquer no arquivo */
-    public Object consultaObj(String nome) {
-        Object obj = new Object();
-        FileInputStream file;
-        ObjectInputStream objectStream;
-        
-        try {
-            file = new FileInputStream("Data - " + nome + ".txt");
-            objectStream = new ObjectInputStream(file);
-            
-            obj = objectStream.readObject();
-        } catch( IOException | ClassNotFoundException ex) {
-            Logger.getLogger(Aluno.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        return obj;
-    }   
-    
-    /* Método para cadastrar um objeto qualquer no arquivo */
-    public void cadastraObj(Object objeto) {
-        ObjectOutputStream objectStream;
-        FileOutputStream file;
-        
-        try {
-            file = new FileOutputStream("Data - " + nome + ".txt"); // Criação de um arquivo para receber o fluxo de dados
-            objectStream = new ObjectOutputStream(file);            // Criação do "assistente" para direcionar esse fluxo
-            
-            objectStream.writeObject(objeto);                       // O assistente escreve o fluxo no arquivo
-            
-            objectStream.close();                                   // O assistente fecha todos os seus fluxos
-        } catch (IOException ex) {
-            Logger.getLogger(Aluno.class.getName()).log(Level.SEVERE, null, ex);
-        }
     }
     
     /* Métodos de acesso */
