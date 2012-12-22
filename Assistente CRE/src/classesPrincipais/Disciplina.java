@@ -2,67 +2,43 @@ package classesPrincipais;
 
 public class Disciplina {
     
-    /* Constantes */
-    private int qtdeNotas = 0;
+    /* Atributos essenciais */
+    private String nome = "";
+    private int qtdeCred = 0;
+    private int periodo = 0;
+    private float[] notas = new float[3];
+    private String status = "Indeterminado";
     
-    /* Atributos principais */
-    private String nome;
-    private int cred;
-    private float media;
-    private float[] notas;
-    private boolean status;
-    
-    /* Outros */
-    private int contador = 0;
-    
-    /* Construtor */
-    public Disciplina (String meuNome, int meuCred, int qNotas, boolean dStatus) {
-        nome = meuNome;
-        cred = meuCred;
-        qtdeNotas = qNotas;
-        status = dStatus;
-        notas = new float[qtdeNotas];
-    }
-    
-    public void cadastraNota (float nota, int peso) {
-        if (contador != qtdeNotas) {
-            notas[contador] = (nota*peso)/qtdeNotas;
-            contador++;
-        }
-    }
-    
-    public void calculaMedia() {
-        for (int i = 0; i < qtdeNotas; i++) {
-            media += notas[i];
-        }
-        media = (media/qtdeNotas);
-    }
-    
-    
-    
-    /* Métodos de acesso */
+    /* Get's e set's */
     public String getNome() {
         return nome;
     }
-    public void getNome(String a) {
-        nome = a;
-    }
-    public int getCred() {
-        return cred;
-    }
-    public void setCred(int a) {
-        cred = a;
-    }
-    public float getMedia() {
-        return media;
-    }
-    public void setMedia(int a) {
-        media = a;
-    }
-    public boolean getStatus () {
+    public String getStatus() {
         return status;
     }
-    public void setStatus (boolean a) {
+    public int getQtdeCred() {
+        return qtdeCred;
+    }
+    public int getPeriodo() {
+        return periodo;
+    }
+    public float[] getNotas() {
+        return notas;
+    }
+    public void setNome(String a) {
+        nome = a;
+    }
+    public void setStatus(String a) {
         status = a;
     }
+    public void setQtdeCred(int a) {
+        qtdeCred = a;
+    }
+    public void setPeriodo(int a) {
+        periodo = a;
+    }
+    public void setNotas(int i, float a) {
+        notas[i] = a;
+    }
+    
 }

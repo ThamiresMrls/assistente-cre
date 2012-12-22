@@ -1,12 +1,17 @@
-Esse pacote abrigará as classes responsáveis pela implementação das funções principais, tornando-
-se assim o cérebro e núcleo do programa. Toda a lógica das funcionalidades e uso dos recursos
-deverá ser implementado aqui.
+Esse pacote abrigarï¿½ as classes responsï¿½veis pela implementaï¿½ï¿½o das funï¿½ï¿½es principais, tornando-
+se assim o cï¿½rebro e nï¿½cleo do programa. Toda a lï¿½gica das funcionalidades e uso dos recursos
+deverï¿½ ser implementado aqui.
 
-Alterações na lógica do projeto, detalhes adicionais, resumos das classes e comunicação sobre
-esse pacote devem ser feitos através desse documento.
+Alteraï¿½ï¿½es na lï¿½gica do projeto, detalhes adicionais, resumos das classes e comunicaï¿½ï¿½o sobre
+esse pacote devem ser feitos atravï¿½s desse documento.
 
 ***** FUNCIONALIDADES SUGERIDAS *****
-
-
+* CADASTRO PERMANENTE DE VÃRIOS USUÃRIOS
+* ORGANIZAÃ‡ÃƒO DAS CADEIRAS POR PERÃODO
 
 ***** RESUMO DAS CLASSES *****
+Classe Aluno
+* NOME, MATRÃCULA, CRE E ARRAYLIST DE MATÃ‰RIAS
+
+Classe MatÃ©ria
+*NOME, CRÃ‰DITOS, PERÃODO, NOTAS[3], STATUS
