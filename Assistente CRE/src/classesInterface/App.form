@@ -48,7 +48,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
@@ -60,7 +60,7 @@
               <Component id="botaoCons" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="botaoSair" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -82,9 +82,9 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Aharoni" size="14" style="1"/>
+          <Font name="Calibri Light" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Projeto Sem Nome #1"/>
+        <Property name="text" type="java.lang.String" value="Astolfo - Seu assistente acad&#xea;mico"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="botaoSair">
@@ -98,7 +98,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Aharoni" size="11" style="0"/>
+          <Font name="Calibri Light" size="11" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Bem vindo!"/>
       </Properties>
@@ -106,9 +106,9 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Aharoni" size="11" style="0"/>
+          <Font name="Calibri Light" size="11" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Voce eh novo por aqui?"/>
+        <Property name="text" type="java.lang.String" value="Voce &#xe9; novo por aqui?"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="botaoCad">

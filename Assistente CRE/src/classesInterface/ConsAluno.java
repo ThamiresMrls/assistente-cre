@@ -39,7 +39,7 @@ public class ConsAluno extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setTitle("Login");
 
-        jLabel2.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri Light", 1, 11)); // NOI18N
         jLabel2.setText("Nome:");
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -55,7 +55,7 @@ public class ConsAluno extends javax.swing.JInternalFrame {
 
         jButton2.setText("jButton2");
 
-        jLabel3.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calibri Light", 1, 11)); // NOI18N
         jLabel3.setText("Senha:");
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {

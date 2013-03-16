@@ -48,13 +48,13 @@ public class CadAluno extends javax.swing.JInternalFrame {
         jLabel1.setFont(new java.awt.Font("Aharoni", 1, 14)); // NOI18N
         jLabel1.setText("Dados do Aluno");
 
-        jLabel2.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Calibri Light", 1, 11)); // NOI18N
         jLabel2.setText("Nome:");
 
-        jLabel3.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Calibri Light", 1, 11)); // NOI18N
         jLabel3.setText("Matrícula:");
 
-        jLabel4.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Calibri Light", 1, 11)); // NOI18N
         jLabel4.setText("Curso:");
 
         jLabel8.setFont(new java.awt.Font("Aharoni", 1, 14)); // NOI18N
@@ -72,13 +72,13 @@ public class CadAluno extends javax.swing.JInternalFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jLabel5.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Calibri Light", 1, 11)); // NOI18N
         jLabel5.setText("Senha:");
 
-        jLabel6.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Calibri Light", 1, 11)); // NOI18N
         jLabel6.setText("Nome de usuário:");
 
-        jLabel9.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Calibri Light", 1, 11)); // NOI18N
         jLabel9.setText("Repita a senha:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

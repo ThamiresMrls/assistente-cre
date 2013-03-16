@@ -108,7 +108,7 @@
                   <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="15" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -142,7 +142,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Aharoni" size="11" style="0"/>
+          <Font name="Calibri Light" size="11" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Nome:"/>
       </Properties>
@@ -150,7 +150,7 @@
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Aharoni" size="11" style="0"/>
+          <Font name="Calibri Light" size="11" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Centro:"/>
       </Properties>
@@ -170,7 +170,7 @@
     <Component class="javax.swing.JLabel" name="jLabel11">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Aharoni" size="11" style="0"/>
+          <Font name="Calibri Light" size="11" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Quantidade de per&#xed;odos:"/>
       </Properties>
