@@ -8,12 +8,12 @@ package classesInterface;
  *
  * @author Luke
  */
-public class CadDisciplina extends javax.swing.JInternalFrame {
+public class CadCurso extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form CadDisciplina
+     * Creates new form CadCurso
      */
-    public CadDisciplina() {
+    public CadCurso() {
         initComponents();
     }
 
@@ -26,43 +26,28 @@ public class CadDisciplina extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel13 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox();
-        jLabel11 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
+        jLabel7 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox();
         jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox();
+        jLabel10 = new javax.swing.JLabel();
+        jComboBox3 = new javax.swing.JComboBox();
+        jLabel11 = new javax.swing.JLabel();
+        jComboBox4 = new javax.swing.JComboBox();
 
-        jLabel13.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
-        jLabel13.setText("Quantidade de Créditos:");
+        jLabel7.setText("Curso:");
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setClosable(true);
         setIconifiable(true);
-        setTitle("Cadastrar Disciplina");
-
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel11.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
-        jLabel11.setText("Período:");
-
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        jLabel1.setFont(new java.awt.Font("Aharoni", 1, 14)); // NOI18N
-        jLabel1.setText("Dados da Disciplina");
-
-        jLabel10.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
-        jLabel10.setText("Curso:");
+        setTitle("Cadastrar Curso");
 
         jButton2.setText("jButton2");
-
-        jButton1.setText("jButton1");
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,13 +55,23 @@ public class CadDisciplina extends javax.swing.JInternalFrame {
             }
         });
 
+        jButton1.setText("jButton1");
+
+        jLabel1.setFont(new java.awt.Font("Aharoni", 1, 14)); // NOI18N
+        jLabel1.setText("Dados do Curso");
+
         jLabel2.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
         jLabel2.setText("Nome:");
 
-        jLabel12.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
-        jLabel12.setText("Quantidade de Créditos:");
+        jLabel10.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
+        jLabel10.setText("Centro:");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabel11.setFont(new java.awt.Font("Aharoni", 0, 11)); // NOI18N
+        jLabel11.setText("Quantidade de períodos:");
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -86,10 +81,9 @@ public class CadDisciplina extends javax.swing.JInternalFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
@@ -109,10 +103,7 @@ public class CadDisciplina extends javax.swing.JInternalFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jTextField1))))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel1)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -132,15 +123,11 @@ public class CadDisciplina extends javax.swing.JInternalFrame {
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -153,15 +140,14 @@ public class CadDisciplina extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JComboBox jComboBox2;
     private javax.swing.JComboBox jComboBox3;
     private javax.swing.JComboBox jComboBox4;
-    private javax.swing.JComboBox jComboBox5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
