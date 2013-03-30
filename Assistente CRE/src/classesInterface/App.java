@@ -1,36 +1,50 @@
 package classesInterface;
 
-public class App extends javax.swing.JFrame {
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
 
-    private Intro astolfo = new Intro();
-    private CadAluno novoEscravo = new CadAluno();
-    private CadCurso novaSenzala = new CadCurso();
-    private CadDisciplina novoEncargo = new CadDisciplina();
-    private ConsAluno velhoEscravo = new ConsAluno();
+public final class App extends javax.swing.JFrame {
+
+    /* Constantes */
+    private String nomeBackground = "Notepad.jpg";
+    
+    /* Embelezamento */
+    private Image background;
+    private Graphics g;
+    
+    /* Componentes */
+    
+    
+    public void meteBackground () {
+        background = Toolkit.getDefaultToolkit().createImage(nomeBackground);
+        background = Toolkit.getDefaultToolkit().createImage(nomeBackground);
+        g.drawImage(background, 0, 0, null);
+    }
+    
     
     public App() {
         initComponents();
-        suite.add(astolfo);
-        astolfo.setVisible(true);
+        meteBackground();
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        suite = new javax.swing.JDesktopPane();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(90, 87, 242));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(suite, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(suite, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         pack();
@@ -68,6 +82,5 @@ public class App extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JDesktopPane suite;
     // End of variables declaration//GEN-END:variables
 }
