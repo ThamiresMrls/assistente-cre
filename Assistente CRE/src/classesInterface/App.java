@@ -2,13 +2,23 @@ package classesInterface;
 
 public class App extends javax.swing.JFrame {
 
+    private Intro astolfo = new Intro();
+    private CadAluno novoEscravo = new CadAluno();
+    private CadCurso novaSenzala = new CadCurso();
+    private CadDisciplina novoEncargo = new CadDisciplina();
+    private ConsAluno velhoEscravo = new ConsAluno();
+    
     public App() {
         initComponents();
+        suite.add(astolfo);
+        astolfo.setVisible(true);
     }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+        suite = new javax.swing.JDesktopPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -16,11 +26,11 @@ public class App extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addComponent(suite, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
+            .addComponent(suite, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
         );
 
         pack();
@@ -58,5 +68,6 @@ public class App extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane suite;
     // End of variables declaration//GEN-END:variables
 }
